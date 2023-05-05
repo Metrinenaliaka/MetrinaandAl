@@ -38,6 +38,9 @@ header {
   overflow-y: auto;
   overflow-x: hidden;
 }
+.scroll {
+  Overflow-y:scroll
+}
 
 #navbar li {
   color: #4d4e53;
