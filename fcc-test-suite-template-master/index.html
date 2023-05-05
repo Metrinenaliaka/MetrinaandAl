@@ -2,25 +2,192 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Technical Documentation Project</title>
+    <link rel="stylesheet" href="css\style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+    <nav id="navbar">
+      <header>Technical Documentation Project</header>
+      <ul>
+        <li><a class="nav-link" href="#html">HTML</a></li>
+        <li><a class="nav-link" href="#css">CSS</a></li>
+        <li><a class="nav-link" href="#javascript">JavaScript</a></li>
+        <li><a class="nav-link" href="#python">Python</a></li>
+        <li><a class="nav-link" href="#ruby">Ruby</a></li>
+      </ul>
+    </nav>
 
-    Hello Camper!
+<main id="main-doc">
+  <section class="main-section" id="html">
+    <header>HTML</header>
+      <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
+    <h3>HTML Elements</h3>
+      <p>HTML documents are made up of HTML elements, which are defined by tags. Each tag begins with a "<" character and ends with a ">" character, and most tags have a corresponding closing tag that begins with "</" and ends with ">". Here are some common HTML elements:</p>
+        <ul>
+          <li><code>&lt;p&gt;</code>: defines a paragraph</li>
+          <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: define headings</li>
+          <li><code>&lt;a&gt;</code>: defines a hyperlink</li>
+          <li><code>&lt;img&gt;</code>: defines an image</li>
+          <li><code>&lt;ul&gt;</code>: defines an unordered list</li>
+          <li><code>&lt;ol&gt;</code>: defines an ordered list</li>
+          <li><code>&lt;table&gt;</code>: defines a table</li>
+          <li><code>&lt;form&gt;</code>: defines a form for user input</li>
+        </ul>
+      <h3>HTML Attributes</h3>
+        <p>HTML elements can also have attributes, which provide additional information about the element. Attributes are always specified in the opening tag, and are written as name-value pairs. Here are some common HTML attributes:</p>
+        <ul>
+          <li><code>class</code>: specifies one or more class names for an element</li>
+          <li><code>id</code>: specifies a unique id for an element</li>
+          <li><code>src</code>: specifies the URL of an image or other media element</li>
+          <li><code>href</code>: specifies the URL of a link</li>
+          <li><code>style</code>: specifies inline CSS styles for an element</li>
+          <li><code>alt</code>: specifies alternative text for an image</li>
+          <li><code>title</code>: specifies additional information about an element (displayed as a tooltip)</li>
+        </ul>
+  </section>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+<section class="main-section" id="css">
+  <header>CSS</header>
+  <p>CSS (Cascading Style Sheets) is used to style and layout web pages, giving them a consistent look and feel. CSS can be applied to HTML documents using either inline styles, internal styles, or external stylesheets.</p>
+  <h3>Inline Styles</h3>
+<p>Inline styles are styles that are applied directly to individual HTML elements, using the <code>style</code> attribute. Here is an example:</p>
+<pre><code><p style="color: red; font-size: 24px;">This paragraph is red and has a font size of 24 pixels.</p></code></pre>
+<p>Inline styles have the highest precedence of all styles, meaning that they will override any other styles applied to the same element.</p>
+<h3>Internal Styles</h3>
+<p>Internal styles are styles that are defined within the <code>"head"</code> section of an HTML document, using the <code>"style"</code> tag. Internal styles have a lower precedence than inline styles, but a higher precedence than external stylesheets.
+<h3>External Stylesheets</h3>
+<p>External stylesheets are styles that are defined in a separate file, and then linked to from the HTML document using the <code>"link"</code> tag External stylesheets have the lowest precedence of all styles, meaning that they will be overridden by any styles defined in inline styles or internal styles.
+</section>
 
-    - The freeCodeCamp Team
+<section class="main-section" id="javascript">
+  <header>JavaScript</header>
+  <p>JavaScript is a scripting language that is used to add interactivity to web pages. It is primarily used for client-side scripting, meaning that it runs in the user's web browser and can manipulate the HTML content and CSS styles of a web page.</p>
+<p>Here is an example of a simple JavaScript program:</p>
+<pre><code>function greet() {
+alert('Hello, world!');
+}
+greet();</code></pre>
+<p>This program defines a function called <code>greet()</code> that takes no parameters. When the function is called, it will print the string "Hello, world!" to the console.</p>
+<p>Here's how you would call the function:</p>
+<pre><code>greet();</code></pre>
+<h3>Control Structures</h3>
+<p>JavaScript provides several control structures that allow us to execute different blocks of code depending on certain conditions. These include:</p>
+<ul>
+<li><code>if/else</code>: executes a block of code if a specified condition is true, and another block of code if it is false.</li>
+<li><code>switch</code>: executes different blocks of code depending on the value of an expression.</li>
+<li><code>for</code>: executes a block of code a specified number of times.</li>
+<li><code>while</code>: executes a block of code while a specified condition is true.</li>
+</ul>
+<p>Here is an example of an <code>if/else</code> statement:</p>
+<pre><code>var x = 5;
+if (x &gt; 10) {
+  console.log("x is greater than 10");
+} else {
+  console.log("x is less than or equal to 10");
+}</code></pre>
+<p>In this example, we define a variable called <code>x</code> and assign it the value of <code>5</code>. We then use an <code>if/else</code> statement to check if <code>x</code> is greater than 10. Since <code>x</code> is not greater than 10, the code inside the <code>else</code> block is executed, and the output is:</p>
+<pre><code>x is less than or equal to 10</code></pre>
+<p>Here is an example of a <code>for</code> loop:</p>
+<pre><code>for (var i = 0; i &lt; 5; i++) {
+  console.log(i);
+}</code></pre>
+<p>This code defines a <code>for</code> loop that will execute the block of code inside it five times. The loop initializes a variable called <code>i</code> to <code>0</code>, checks if <code>i</code> is less than 5, executes the block of code inside the loop, and then increments <code>i</code> by 1. This process repeats until <code>i</code> is no longer less than 5. The output of this code is:</p>
+<pre><code>0
+1
+2
+3
+4</code></pre>
+<h3>Conclusion</h3>
+<p>JavaScript is a powerful programming language that can be used to createdynamic and interactive web pages. With its many built-in features and vast library of third-party plugins, JavaScript allows web developers to create a wide range of applications and websites.</p>
 
-    -->
+<p>By mastering the basics of JavaScript, you can build more advanced web applications that include features such as user input validation, form submission, and dynamic content generation. There are many resources available to help you learn JavaScript, including online courses, books, and tutorials.</p>
+<p>Whether you are a beginner or an experienced web developer, learning JavaScript is an essential skill that can help you take your web development skills to the next level.</p>
+</section>
+
+<section class="main-section" id="python">
+  <header>Python</header>
+  <p>Python is a high-level, interpreted programming language that is widely used for web development, scientific computing, data analysis, artificial intelligence, and more. It was first released in 1991 by Guido van Rossum, and its design philosophy emphasizes code readability and ease of use, making it a popular choice for beginners and experienced programmers alike.</p>
+<h3>Python Variables</h3>
+<p>In Python, variables are used to store values that can be accessed and manipulated throughout the program. Unlike some other programming languages, Python does not require you to declare the type of a variable before you use it.</p>
+<p>Here's an example of how to define a variable in Python:</p>
+<pre><code>x = 5
+y = "Hello, world!"</code></pre>
+<p>In this example, we define two variables: <code>x</code> and <code>y</code>. <code>x</code> is assigned the value <code>5</code>, and <code>y</code> is assigned the string <code>"Hello, world!"</code>.</p>
+
+<h3>Python Data Types</h3>
+        <p>Python supports a variety of data types, including numbers, strings, booleans, lists, tuples, and dictionaries. Unlike some other programming languages, Python is able to automatically determine the data type of a variable based on the value assigned to it.</p>
+        <p>Here are some examples of different data types in Python:</p>
+        <pre><code>num = 42             # integer
+pi = 3.14            # float
+name = "John"        # string
+is_student = True    # boolean
+fruits = ["apple", "banana", "cherry"]      # list
+coordinates = (10, 20)                      # tuple
+person = {"name": "John", "age": 25}        # dictionary</code></pre>
+        <p>As you can see, Python makes it easy to work with different types of data.</p>
+
+<h3>Loops</h3>
+<p>In Python, there are two main types of loops: <code>for</code> loops and <code>while</code> loops.</p>
+<p>A <code>for</code> loop is used to iterate over a sequence (such as a list or a string) a specific number of times:</p>
+<pre><code>fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+print(fruit)
+</code></pre>
+<p>In this example, the <code>for</code> loop iterates over the <code>fruits</code> list, assigning each element to the variable <code>fruit</code> in turn. The <code>print</code> statement then prints each element.</p>
+<p>A <code>while</code> loop is used to repeat a block of code as long as a certain condition is true:</p>
+<pre><code>i = 1
+while i < 6:
+print(i)
+i += 1
+</code></pre>
+<p>In this example, the <code>while</code> loop prints the values of <code>i</code> from 1 to 5 (inclusive), incrementing <code>i</code> by 1 each time through the loop.</p>
+<h3>Python Functions</h3>
+<p>Functions are an essential part of any programming language, and Python is no exception. A function is a block of code that performs a specific task, and can be called from other parts of the program as needed.</p>
+<p>Here's an example of a Python function:</p>
+<pre><code>def greet():
+print("Hello, world!")</code></pre>
+<p>This program defines a function called <code>greet()</code> that takes no parameters. When the function is called, it will print the string "Hello, world!" to the console.</p>
+<p>Here's how you would call the function:</p>
+<pre><code>greet()</code></pre>
+<h3>Conclusion</h3>
+<p>Python is a powerful and versatile programming language that can be used for a wide variety of tasks, from simple scripts to complex web applications. Its simple syntax and ease of use make it a popular choice for beginners, while its powerful libraries and frameworks make it a favorite among experienced developers.</p>
+</section>
+
+<section class="main-section" id="ruby">
+  <header>Ruby</header>
+  <p>Ruby is a dynamic, object-oriented programming language that was designed to balance programmer productivity and simplicity with performance and scalability. It has a clean and concise syntax that makes it easy to read and write, and it is often used for web development, database programming, and other tasks that require a high level of abstraction. Ruby was first released in 1995 by Yukihiro "Matz" Matsumoto, and it is designed to be easy to read and write, making it a popular choice for beginners and experienced programmers alike.</p>
+<h3>Variables and Data Types</h3>
+<p>In Ruby, variables are declared using the <code>=</code> operator. Ruby is a dynamically-typed language, which means that the type of a variable is determined at runtime based on the value assigned to it.</p>
+<p>Here is an example of a variable declaration in Ruby:</p>
+<pre><code>x = 5
+y = "Hello, world!"
+</code></pre>
+<p>In this example, <code>x</code> is assigned the integer value <code>5</code>, and <code>y</code> is assigned the string value <code>"Hello, world!"</code>.</p>
+<p>Ruby has several built-in data types, including integers, floats, strings, symbols, arrays, and hashes.</p>
+<h3>Conditional Statements</h3>
+<p>Conditional statements in Ruby use the <code>if</code>, <code>elsif</code>, and <code>else</code> keywords. Here is an example of an if statement in Ruby:</p>
+<pre><code>age= 18
+if age >= 18
+puts "You are old enough to vote."
+end</code></pre>
+
+<p>This program defines a variable called <code>age</code> and checks if it is greater than or equal to <code>18</code>. If it is, the program prints "You are old enough to vote." to the console. If not, nothing happens.</p>
+<h3>Loops</h3>
+<p>In Ruby, there are two types of loops; <code>for</code> loops and <code>while</code> loops, but they are not commonly used. Instead, the <code>each</code> method is often used to iterate over arrays and other collections. Here is an example:</p>
+<pre><code>fruits = ["apple", "banana", "cherry"]
+fruits.each do |fruit|
+  puts fruit
+end</code></pre>
+<p>This program defines an array called <code>fruits</code> and uses the <code>each</code> method to iterate over each element in the array and print it to the console.</p>
+      </section>
+
+<h3>Conclusion</h3>
+<p>Ruby is a general-purpose language that can be used for a wide range of applications, including web development, desktop applications, system utilities, and more. It has a strong focus on simplicity and readability, which makes it a great language for beginners to learn.Whether you are a beginner or an experienced programmer, learning Ruby can be a valuable skill to have. With its focus on simplicity and productivity, Ruby can help you write code that is easy to read and maintain, while also allowing you to build powerful and complex applications</p>
+</section> 
+    </main>
     <script  src="js/index.js"></script>
   </body>
 </html>
